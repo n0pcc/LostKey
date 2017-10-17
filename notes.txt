@@ -1,0 +1,23 @@
+Useful for debugging with gdb:
+    
+    set follow-fork-mode child
+    set detach-on-fork off
+
+    info inferiors
+    inferior infno
+
+
+Hashcat for the 3rd argument:
+    
+    hashcat -m 0 -a 3 md5_hash.txt \?a\?a\?a\?a\?a\?a
+
+
+LostKey with correct arguments:
+    ./LostKey flag{Th3 _key_1s_in_th3_secret_com p4rtme $(python2 -c "print 'nt_of_your_t00l_sh3d...}'")
+
+
+My zsh complains about
+    zsh: no matches found: ?a?a?a?a?a?a
+and
+    zsh: parse error near `}'
+:/
